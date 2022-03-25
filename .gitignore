@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Disbale track of some output folder
+images/
+tests/
