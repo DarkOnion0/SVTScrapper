@@ -106,3 +106,6 @@ dist
 # Disbale track of some output folder
 images/
 tests/
+
+# Disable code editor settings tracking
+.idea/

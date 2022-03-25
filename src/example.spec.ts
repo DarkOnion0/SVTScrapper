@@ -2,6 +2,8 @@ import { test, expect } from "@playwright/test"
 
 test("basic test", async ({ page }) => {
   page.once("load", async () => {
+    await page.waitForTimeout(10000)
+
     const title = page.locator("#demarre")
     const toutTirer = page.locator("#touttirer")
     const genSuivantes = page.locator("#suivante")
