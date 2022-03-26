@@ -5,11 +5,7 @@
         yarn install
 
         # patch playwright on nixos
-        if [ -z $NIXPKGS_CONFIG ]; then
-            echo no need to patch playwright
-        else
-            bash ./fix-playwright.sh
-        fi
+        bash ./fix-playwright.sh
 
         # install playwright support for firefox
         yarn playwright install firefox
