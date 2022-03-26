@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Come from this github repo --> https://github.com/ludios/nixos-playwright/blob/master/fix-playwright-chromium
+
+set -eu -o pipefail
+
+firefox_wrapper_1=$(which firefox)
+firefox_wrapper_2=$(cat "$firefox_wrapper_1" | grep '^exec ' | grep -o -P '/nix/store/[^"]+' | head -n 1)
+firefox_binary=$(cat "$firefox_wrapper_2" | grep '^exec ' | grep -o -P '/nix/store/[^"]+' | head -n 1)
+firefox_rpath=$(patchelf --print-rpath "$firefox_binary")
+firefox_interpreter=$(patchelf --print-interpreter "$firefox_binary")
+
+for i in ~/.cache/ms-playwright/firefox-*/firefox/firefox; do
+	# Replace the redundant `firefox` with a wrapper over `firefox-bin`
+	cat "$firefox_wrapper_1" "$firefox_wrapper_2" | grep '^export ' > $(dirname "$i")/firefox
+	echo "exec \"${i}-bin\" \"\$@\"" >> $(dirname "$i")/firefox
+	chmod +x "$(dirname "$i")/firefox"
+done
+
+find ~/.cache/ms-playwright/firefox-*/firefox/ -executable -type f | while read i; do
+	echo "$i"
+	if ! [[ "$i" == *.so ]]; then
+		patchelf --set-interpreter "$firefox_interpreter" "$i" || true
+	fi
+	patchelf --set-rpath "$firefox_rpath" "$i" || true
+done
