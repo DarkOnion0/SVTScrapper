@@ -21,6 +21,7 @@
     "quotes": ["error", "double"],
     "@typescript-eslint/quotes": ["error", "double"],
     "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
-    "@typescript-eslint/comma-dangle": ["error", "never"]
+    "@typescript-eslint/comma-dangle": ["error", "never"],
+    "no-console": 0
   }
 }
