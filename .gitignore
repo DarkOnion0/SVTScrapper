@@ -105,7 +105,7 @@ dist
 
 # Disbale track of some output folder
 images/
-tests/
+out/
 
 # Disable code editor settings tracking
 .idea/
