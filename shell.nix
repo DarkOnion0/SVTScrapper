@@ -9,6 +9,9 @@
 
         # install playwright support for firefox
         yarn playwright install firefox
+
+        # Export some env vars
+        export SCRAPPER_CONF=$(pwd)/data.json
     '';
 
     # nativeBuildInputs is usually what you want -- tools you need to run
