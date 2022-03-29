@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "https://github.com/DarkOnion0/SVTSrapper.git",
   "author": "DarkOnion0",
-  "license": "MIT",
+  "license": "GPL 3.0",
   "private": true,
   "scripts": {
     "format": "yarn prettier --write .",
