@@ -21,3 +21,5 @@ You just need to type `yarn run start`, it will format, lint, compile and run th
 at the end of each test.
 
 Currently, if you want to customize the test you need to directly edit the source code and more specifically the `main.ts` file
+
+[![asciicast](https://asciinema.org/a/oxOq3NDrn6J6TKYmgADExZL3G.svg)](https://asciinema.org/a/oxOq3NDrn6J6TKYmgADExZL3G)
