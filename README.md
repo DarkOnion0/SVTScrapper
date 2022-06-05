@@ -14,7 +14,7 @@ Automatically resolve a graph for simulating the genetic drifting
 
 1. [Install nix](https://nixos.org/manual/nix/stable/installation/installing-binary.html)
 2. [Install direnv](https://github.com/direnv/direnv) to automatically switch inside the nix-shell, mostly for development purpose (OPTIONAL)
-3. Run `nix-shell` in the project root and watch the magic append ✨ !
+3. Run `nix-shell` in the project root and watch the magic happen ✨ !
 
 # 🏃 Running
 You just need to type `yarn run start`, it will format, lint, compile and run the code. The result of the scrapping will be printed in the console 
