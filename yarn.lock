@@ -52,13 +52,13 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@playwright/test@^1.22.2":
-  version "1.23.2"
-  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.23.2.tgz#6af9e77bafcfe6dd17c23a44b40f793db5245d74"
-  integrity sha512-umaEAIwQGfbezixg3raSOraqbQGSqZP988sOaMdpA2wj3Dr6ykOscrMukyK3U6edxhpS0N8kguAFZoHwCEfTig==
+"@playwright/test@^1.23.3":
+  version "1.24.2"
+  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.24.2.tgz#283ea8cc497f9742037458659bf235f4776cf1f0"
+  integrity sha512-Q4X224pRHw4Dtkk5PoNJplZCokLNvVbXD9wDQEMrHcEuvWpJWEQDeJ9gEwkZ3iCWSFSWBshIX177B231XW4wOQ==
   dependencies:
     "@types/node" "*"
-    playwright-core "1.23.2"
+    playwright-core "1.24.2"
 
 "@types/json-schema@^7.0.9":
   version "7.0.10"
