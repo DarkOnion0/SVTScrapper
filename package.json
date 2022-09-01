@@ -15,7 +15,7 @@
     "start": "yarn run dev && node --trace-warnings out/main.js"
   },
   "dependencies": {
-    "playwright": "^1.23.3",
+    "playwright": "^1.25.0",
     "@playwright/test": "^1.23.3"
   },
   "devDependencies": {
