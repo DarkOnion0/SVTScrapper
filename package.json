@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "playwright": "^1.23.3",
-    "@playwright/test": "^1.23.3"
+    "@playwright/test": "^1.25.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.16.0",
